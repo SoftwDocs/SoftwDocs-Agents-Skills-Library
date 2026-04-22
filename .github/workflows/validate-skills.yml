@@ -1,0 +1,122 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - '**/SKILL.md'
+      - '.github/workflows/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - '**/SKILL.md'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate Skill Structure
+        run: |
+          echo "🔍 Validating skill structure..."
+          
+          # Check each skill directory
+          for skill_dir in */; do
+            # Skip non-skill directories
+            if [[ "$skill_dir" == ".github/" ]] || [[ "$skill_dir" == ".git/" ]]; then
+              continue
+            fi
+            
+            skill_name=$(basename "$skill_dir")
+            skill_file="${skill_dir}SKILL.md"
+            
+            echo "Checking $skill_name..."
+            
+            # Check if SKILL.md exists
+            if [ ! -f "$skill_file" ]; then
+              echo "❌ ERROR: $skill_file not found"
+              exit 1
+            fi
+            
+            # Check minimum line count (100 lines)
+            line_count=$(wc -l < "$skill_file")
+            if [ "$line_count" -lt 100 ]; then
+              echo "❌ ERROR: $skill_file has only $line_count lines (minimum 100 required)"
+              exit 1
+            fi
+            
+            # Check for required frontmatter
+            if ! grep -q "^---$" "$skill_file"; then
+              echo "❌ ERROR: $skill_file missing frontmatter delimiter"
+              exit 1
+            fi
+            
+            # Check for required fields
+            if ! grep -q "^name:" "$skill_file"; then
+              echo "❌ ERROR: $skill_file missing 'name' field"
+              exit 1
+            fi
+            
+            if ! grep -q "^description:" "$skill_file"; then
+              echo "❌ ERROR: $skill_file missing 'description' field"
+              exit 1
+            fi
+            
+            if ! grep -q "^version:" "$skill_file"; then
+              echo "❌ ERROR: $skill_file missing 'version' field"
+              exit 1
+            fi
+            
+            echo "✅ $skill_name passed validation ($line_count lines)"
+          done
+          
+          echo "🎉 All skills validated successfully!"
+
+      - name: Check README Links
+        run: |
+          echo "🔗 Checking README links..."
+          
+          # Check if all skills are linked in README
+          for skill_dir in */; do
+            if [[ "$skill_dir" == ".github/" ]] || [[ "$skill_dir" == ".git/" ]]; then
+              continue
+            fi
+            
+            skill_name=$(basename "$skill_dir")
+            
+            if ! grep -q "${skill_name}/SKILL.md" README.md; then
+              echo "⚠️ WARNING: $skill_name not linked in README.md"
+            fi
+          done
+          
+          echo "✅ README link check complete"
+
+      - name: Generate Skill Stats
+        run: |
+          echo "📊 Generating skill statistics..."
+          
+          total_skills=0
+          total_lines=0
+          
+          for skill_dir in */; do
+            if [[ "$skill_dir" == ".github/" ]] || [[ "$skill_dir" == ".git/" ]]; then
+              continue
+            fi
+            
+            skill_file="${skill_dir}SKILL.md"
+            if [ -f "$skill_file" ]; then
+              total_skills=$((total_skills + 1))
+              lines=$(wc -l < "$skill_file")
+              total_lines=$((total_lines + lines))
+            fi
+          done
+          
+          echo "📈 Stats: $total_skills skills, $total_lines total lines"
+          echo "average_lines=$((total_lines / total_skills))" >> $GITHUB_ENV
