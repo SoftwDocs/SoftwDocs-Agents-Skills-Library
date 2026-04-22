@@ -49,7 +49,7 @@ Developed by **Syed Mujtaba Abbas**, a Full Stack & Agentic AI Developer.
 Founder of **EticTech** – Building the future of AI-driven software solutions.
 
 - **Portfolio:** [mujtaba-abbas.web.app](https://mujtaba-abbas.web.app)
-- **Agency:** EticTech
+- **Agency:** SoftwDocs
 
 ---
 
