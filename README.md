@@ -1,6 +1,6 @@
 # 🚀 Claude Code Skills Library
 
-[![Skills Count](https://img.shields.io/badge/skills-9-blue?style=flat-square)](./#-available-skills)
+[![Skills Count](https://img.shields.io/badge/skills-14-blue?style=flat-square)](./#-available-skills)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE)
 [![Validation](https://img.shields.io/badge/validation-passing-brightgreen?style=flat-square)](./.github/workflows/validate-skills.yml)
 [![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-orange?style=flat-square)](./CONTRIBUTING.md)
@@ -17,8 +17,8 @@ Welcome to the ultimate repository of **Claude Code Skills** — a curated colle
 
 | Metric | Value |
 |--------|-------|
-| **Total Skills** | 9 |
-| **Total Lines** | ~7,000+ |
+| **Total Skills** | 14 |
+| **Total Lines** | ~12,000+ |
 | **Technologies** | Next.js, FastAPI, TypeScript, Prisma, Tailwind |
 | **License** | MIT |
 | **Status** | Production Ready |
@@ -78,29 +78,47 @@ To use these skills in your project, simply copy the desired skill folder into y
 - **Best for:** Pharmacy management systems, medical store POS, healthcare inventory, and prescription processing.
 - **Features:** Prescription validation, drug interaction checking, FIFO inventory, expiry tracking, insurance claims, and HIPAA compliance.
 
+### 10. [Advanced Animation Engine](./advanced-animation-engine/SKILL.md)
+**Purpose:** Professional animation system using GSAP and Framer Motion for complex, performant web animations. Includes timeline orchestration, scroll-based animations, physics simulations, and micro-interactions.
+- **Best for:** Interactive landing pages, scroll-triggered storytelling, physics-based UI interactions, and animated data visualizations.
+- **Features:** GSAP timelines, ScrollTrigger, Framer Motion gestures, physics simulations, and performance optimization.
+
+### 11. [HIPAA Compliance Kit](./hipaa-compliance-kit/SKILL.md)
+**Purpose:** Complete HIPAA compliance implementation for healthcare applications. Covers PHI encryption, audit logging, access controls, BAA templates, and regulatory requirements handling.
+- **Best for:** Healthcare applications, telemedicine platforms, EHR systems, medical device software, and pharmacy management.
+- **Features:** PHI encryption, audit logging, RBAC, minimum necessary principle, BAA templates, and incident response.
+
+### 12. [React Native Architect](./react-native-architect/SKILL.md)
+**Purpose:** Complete React Native architecture for cross-platform mobile development. Covers navigation, state management, native modules, performance optimization, and platform-specific implementations.
+- **Best for:** Cross-platform mobile applications, web-to-mobile migration, native-feeling mobile experiences, and apps with offline capabilities.
+- **Features:** React Navigation, Redux Toolkit, React Query, native modules, Hermes engine, and performance optimization.
+
+### 13. [DevOps Pipeline](./devops-pipeline/SKILL.md)
+**Purpose:** Complete DevOps pipeline implementation with Docker, Kubernetes, CI/CD automation, infrastructure as code, monitoring, and deployment strategies for production applications.
+- **Best for:** Production deployment pipelines, container-based infrastructure, CI/CD automation, multi-environment deployments, and Kubernetes orchestration.
+- **Features:** Docker multi-stage builds, Kubernetes manifests, GitHub Actions, Terraform, Prometheus/Grafana, and deployment strategies.
+
+### 14. [Third-Party Integrations](./third-party-integrations/SKILL.md)
+**Purpose:** Complete implementation patterns for third-party service integrations including Stripe payments, Twilio communications, SendGrid emails, AWS services, and OAuth authentication with proper error handling and security.
+- **Best for:** Payment processing, SMS/voice communications, transactional emails, cloud services integration, and social authentication.
+- **Features:** Stripe payments, Twilio SMS/voice, SendGrid emails, AWS S3/SNS/SES, OAuth 2.0, and webhook security.
+
 ---
 
 ## 📊 Skills Quick Reference
 
 | Category | Skills |
 |----------|--------|
-| **Frontend** | Performance-First Next.js, Tailwind Glass UI, SEO Master |
-| **Backend** | Enterprise CRUD Engine, API Security Shield |
+| **Frontend** | Performance-First Next.js, Tailwind Glass UI, SEO Master, Advanced Animation Engine |
+| **Backend** | Enterprise CRUD Engine, API Security Shield, Third-Party Integrations |
 | **AI/ML** | Agentic Workflow Orchestrator, Structured AI Output |
+| **Mobile** | React Native Architect |
+| **DevOps** | DevOps Pipeline |
 | **Testing** | Auto-Test Architect |
+| **Compliance** | HIPAA Compliance Kit |
 | **Domain-Specific** | Pharmacy POS Logic |
 
 ---
-
-## ⏳ Coming Soon (Premium Skills)
-
-We are actively developing the following advanced skills:
-
-- 🎨 **Advanced Animation Engine:** GSAP + Framer Motion complex animations
-- 🔒 **HIPAA Compliance Kit:** Healthcare data handling and audit systems
-- 📱 **React Native Architect:** Cross-platform mobile app development
-- 🐳 **DevOps Pipeline:** Docker, Kubernetes, and CI/CD automation
-- 🤝 **Third-Party Integrations:** Stripe, Twilio, SendGrid implementation patterns
 
 ---
 
@@ -153,9 +171,9 @@ Full Stack & Agentic AI Developer<br>
 
 ## 📊 Repository Activity
 
-![GitHub Contributors](https://img.shields.io/github/contributors/etictech/skills-liabrary?style=flat-square)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/etictech/skills-liabrary?style=flat-square)
-![GitHub Repo Size](https://img.shields.io/github/repo-size/etictech/skills-liabrary?style=flat-square)
+![GitHub Contributors](https://img.shields.io/github/contributors/syed-mujtaba-stack/skills-liabrary?style=flat-square)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/syed-mujtaba-stack/skills-liabrary?style=flat-square)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/syed-mujtaba-stack/skills-liabrary?style=flat-square)
 
 ---
 
