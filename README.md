@@ -1,6 +1,6 @@
 # 🚀 Claude Code Skills Library
 
-[![Skills Count](https://img.shields.io/badge/skills-14-blue?style=flat-square)](./#-available-skills)
+[![Skills Count](https://img.shields.io/badge/skills-19-blue?style=flat-square)](./#-available-skills)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE)
 [![Validation](https://img.shields.io/badge/validation-passing-brightgreen?style=flat-square)](./.github/workflows/validate-skills.yml)
 [![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-orange?style=flat-square)](./CONTRIBUTING.md)
@@ -17,8 +17,8 @@ Welcome to the ultimate repository of **Claude Code Skills** — a curated colle
 
 | Metric | Value |
 |--------|-------|
-| **Total Skills** | 14 |
-| **Total Lines** | ~12,000+ |
+| **Total Skills** | 19 |
+| **Total Lines** | ~15,000+ |
 | **Technologies** | Next.js, FastAPI, TypeScript, Prisma, Tailwind |
 | **License** | MIT |
 | **Status** | Production Ready |
@@ -103,6 +103,31 @@ To use these skills in your project, simply copy the desired skill folder into y
 - **Best for:** Payment processing, SMS/voice communications, transactional emails, cloud services integration, and social authentication.
 - **Features:** Stripe payments, Twilio SMS/voice, SendGrid emails, AWS S3/SNS/SES, OAuth 2.0, and webhook security.
 
+### 15. [GraphQL API Architect](./graphql-api-architect/SKILL.md)
+**Purpose:** Complete GraphQL API architecture with Apollo Server, schema design, resolvers, subscriptions, authentication, caching, and best practices for production GraphQL APIs.
+- **Best for:** Building GraphQL APIs, migrating REST to GraphQL, real-time features, and complex schema design.
+- **Features:** Apollo Server, type-safe schemas, DataLoader, subscriptions, caching, and error handling.
+
+### 16. [Real-Time Communication](./real-time-communication/SKILL.md)
+**Purpose:** Complete real-time communication implementation with WebSockets, Socket.IO, WebRTC, push notifications, and live collaboration features for modern web applications.
+- **Best for:** Chat applications, live collaboration, video/audio calling, real-time dashboards, and multiplayer games.
+- **Features:** Socket.IO, WebRTC, push notifications, live editing, and WebSocket security.
+
+### 17. [Serverless Architecture](./serverless-architecture/SKILL.md)
+**Purpose:** Complete serverless architecture implementation with AWS Lambda, API Gateway, DynamoDB, S3, CloudFormation, and best practices for scalable, cost-effective serverless applications.
+- **Best for:** Serverless APIs, event-driven architectures, cost-effective applications, and microservices without servers.
+- **Features:** AWS Lambda, API Gateway, DynamoDB, SAM, CloudFormation, and event triggers.
+
+### 18. [Caching Strategies](./caching-strategies/SKILL.md)
+**Purpose:** Complete caching strategies implementation with Redis, Memcached, CDN, browser caching, database query caching, and cache invalidation patterns for high-performance applications.
+- **Best for:** Reducing database load, improving API response times, session storage, and performance optimization.
+- **Features:** Redis, multi-level caching, CDN integration, cache invalidation, and monitoring.
+
+### 19. [Event-Driven Architecture](./event-driven-architecture/SKILL.md)
+**Purpose:** Complete event-driven architecture implementation with message queues, event buses, pub/sub patterns, saga patterns, and distributed systems for scalable, decoupled applications.
+- **Best for:** Microservices architectures, asynchronous processing, distributed transactions, and real-time data pipelines.
+- **Features:** RabbitMQ, SQS, Kafka, saga pattern, event sourcing, and CQRS.
+
 ---
 
 ## 📊 Skills Quick Reference
@@ -110,10 +135,13 @@ To use these skills in your project, simply copy the desired skill folder into y
 | Category | Skills |
 |----------|--------|
 | **Frontend** | Performance-First Next.js, Tailwind Glass UI, SEO Master, Advanced Animation Engine |
-| **Backend** | Enterprise CRUD Engine, API Security Shield, Third-Party Integrations |
+| **Backend** | Enterprise CRUD Engine, API Security Shield, Third-Party Integrations, GraphQL API Architect |
 | **AI/ML** | Agentic Workflow Orchestrator, Structured AI Output |
 | **Mobile** | React Native Architect |
-| **DevOps** | DevOps Pipeline |
+| **DevOps** | DevOps Pipeline, Serverless Architecture |
+| **Real-Time** | Real-Time Communication |
+| **Performance** | Caching Strategies |
+| **Architecture** | Event-Driven Architecture |
 | **Testing** | Auto-Test Architect |
 | **Compliance** | HIPAA Compliance Kit |
 | **Domain-Specific** | Pharmacy POS Logic |
